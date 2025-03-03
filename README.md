@@ -33,8 +33,7 @@ Record a short video of your project to display here on your README. You can do 
 
 ## Project Description
 
-Write a description of the goal and/or problem that your application. Include descriptions of what text is being analyzed, either if its text files you are using to interpret text an how the user interacts with your project.
+Our code is a password checker that can run through a list of passwords or the user's inputted password. The code runs through the “passwords.txt” file and checks if those passwords are “Weak”, “Medium”, or “Strong”. It than asks the user if they would like to check a password and they say no, the program is completed. If they say yes, they can input any password of their choice and press enter. Once they press enter it will tell them if their password is “Weak”, “Medium”, or “Strong” and the program is completed. We created this so people can identify if their password is safe to use but can also check multiple passcodes at once. This could be helpful for apps or websites to use if it requires users to make accounts. This gives users extra verification that the information they are inputting will make it harder for others to access their accounts.
 
 ## NLP Techniques
 
-Write a description of what natural lanugage technique (NLP) you implemented in your project. State which methods in your project are associated with this, and a brief explanation of how those methods word and how they are necessary in the NLP technique. 
