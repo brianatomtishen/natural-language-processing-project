@@ -37,3 +37,4 @@ Our code is a password checker that can run through a list of passwords or the u
 
 ## NLP Techniques
 
+NLP combines the power of computational linguistics together with machine learning algorithms and deep learning. Computational linguistics uses data science to analyze language and speech. It includes two main types of analysis: syntactical analysis and semantical analysis. Our code is able to recognize certain characteristics of a passcode using techniques such as tokenization to break down the password into smaller units for analysis. Our program focuses more on syntactical analysis because it concentrates on the structure of the passcode (special characters, letters, and numbers).
