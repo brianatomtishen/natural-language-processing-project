@@ -1,0 +1,50 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class UserPasswordChecker {
+  
+    private ArrayList<String> userPasswords;
+
+    // Constructor
+    public UserPasswordChecker(ArrayList<String> userPasswords) {
+        this.userPasswords = userPasswords;
+    }
+    // Checks if a user password is strong based on length and character variety
+    public static String checkPasswordStrength(String password) {
+        boolean hasLetters = false;
+        boolean hasNumbers = false;
+        boolean hasSpecialChars = false;
+
+        for (int i = 0; i < password.length(); i++) {
+            char c = password.charAt(i);
+            if (Character.isLetter(c)) {
+                hasLetters = true;
+            } else if (Character.isDigit(c)) {
+                hasNumbers = true;
+            } else {
+                hasSpecialChars = true;
+            }
+        }
+
+        if (hasLetters && hasNumbers && hasSpecialChars) {
+            return "Strong";
+        } else if ((hasLetters && hasNumbers) || (hasNumbers && hasSpecialChars) || (hasSpecialChars && hasLetters)) {
+            return "Medium";
+        } else {
+            return "Weak";
+        }
+    }
+
+  // Allow user to input a password for strength checking
+    public void checkUserPassword() {
+      Scanner scanner = new Scanner(System.in);
+      String answer = scanner.nextLine().trim().toLowerCase();
+      if (answer.equals("yes")) {
+        System.out.print("Enter a password to check its strength: ");
+        String userPassword = scanner.nextLine();
+        System.out.println("Password Strength: " + checkPasswordStrength(userPassword));
+      } else {
+        System.out.println("Goodbye");
+      }
+    }
+}
