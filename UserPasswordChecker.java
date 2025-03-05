@@ -47,13 +47,23 @@ public class UserPasswordChecker {
 
     public void checkUserPassword() {
       Scanner scanner = new Scanner(System.in);
-      String answer = scanner.nextLine().trim().toLowerCase();
-      if (answer.equals("yes")) {
-        System.out.print("Enter a password to check its strength: ");
-        String userPassword = scanner.nextLine();
-        System.out.println("Password Strength: " + checkPasswordStrength(userPassword));
-      } else {
-        System.out.println("Goodbye");
+      String answer = "";
+      
+      boolean correctInput = true;
+      
+      while (correctInput) {
+        System.out.println("\nWould you like to check your password? yes or no");
+        answer = scanner.nextLine().trim().toLowerCase();
+        if (answer.equals("yes")) {
+          System.out.print("Enter a password to check its strength: ");
+          String userPassword = scanner.nextLine();
+          System.out.println("Password Strength: " + checkPasswordStrength(userPassword));
+        } else if (answer.equals("no")) {
+          System.out.println("Goodbye");
+          correctInput = false;
+        } else {
+          System.out.println("We did not understand. Please enter yes/no.");
+        }
       }
     }
 }
