@@ -15,7 +15,6 @@ import java.util.Scanner;
       
         ArrayList<String> userPasswords = new ArrayList<>();
         UserPasswordChecker checking = new UserPasswordChecker(userPasswords);
-        System.out.println("\nWould you like to check your password? yes or no");
         checking.checkUserPassword();
 
     }
