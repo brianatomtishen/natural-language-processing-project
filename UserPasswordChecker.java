@@ -5,11 +5,18 @@ public class UserPasswordChecker {
   
     private ArrayList<String> userPasswords;
 
-    // Constructor
+    /**
+ *  Constuctor of the UserPasswordChecker to check the userPasswords
+ * 
+ */
     public UserPasswordChecker(ArrayList<String> userPasswords) {
         this.userPasswords = userPasswords;
     }
-    // Checks if a user password is strong based on length and character variety
+    /**
+ *  Checks if a user password is strong based on length and character variety
+ * this uses booleans to check true or false on certain items letters numbers special Chars  
+ */
+   
     public static String checkPasswordStrength(String password) {
         boolean hasLetters = false;
         boolean hasNumbers = false;
@@ -31,11 +38,13 @@ public class UserPasswordChecker {
         } else if ((hasLetters && hasNumbers) || (hasNumbers && hasSpecialChars) || (hasSpecialChars && hasLetters)) {
             return "Medium";
         } else {
-            return "Weak";
+            return "Weak"; 
         }
     }
+ /**
+  // Allow user to input a password for strength checking * 
+ */
 
-  // Allow user to input a password for strength checking
     public void checkUserPassword() {
       Scanner scanner = new Scanner(System.in);
       String answer = scanner.nextLine().trim().toLowerCase();
