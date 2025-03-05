@@ -28,8 +28,8 @@ Record a short video of your project to display here on your README. You can do 
 - Take a thumbnail for your image.
 - Upload the thumbnail image to your repo.
 - Use the following markdown code:
-
-[Screen recording 2025-03-02 8.41.49 PM.webm](https://github.com/user-attachments/assets/23927a75-9e88-4824-9b1c-0f1d4a155687)
+  
+[Screen recording 2025-03-05 9.26.31 AM.webm](https://github.com/user-attachments/assets/cd784b75-d02d-4397-bbca-78186ef3f214)
 
 ## Project Description
 
